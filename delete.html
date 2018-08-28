@@ -1,0 +1,31 @@
+Delete.html
+<HTML>
+<HEAD>
+<TITLE> Delete </TITLE>
+<script language = "javascript">
+function callMe()
+{
+  if(f1.no.value== "")
+	{
+	 alert("Number Cannot be Empty");
+	 f1.no.focus();
+	 return false;
+	}
+}
+</script>
+</HEAD>
+<BODY>
+<form name="f1" method="post" action="./del.jsp" onSubmit = "return callMe()">
+<br><table align="center" width="30%" height="30%">
+<caption><b>Delete Record</b></caption>
+<tr>
+<td>Enter Name :</td>
+<td><input type="text" name="no"></td>
+</tr>
+<tr>
+<td align="center"><input name="sub" type="submit" value="Delete"></td>
+</tr>
+</table>
+</form>
+</BODY>
+</HTML>
